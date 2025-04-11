@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz@0,14..32;1,14..32&display=swap');
+
+@font-face {
+   font-family: 'PP Editorial Old';
+   src: url('/fonts/PPEditorialOld-UltralightItalic.woff2') format('woff2'),
+      url('/fonts/PPEditorialOld-UltralightItalic.woff') format('woff');
+   font-weight: 200;
+   font-style: italic;
+   font-display: swap;
+}
+
+@font-face {
+   font-family: 'PP Editorial Old';
+   src: url('/fonts/PPEditorialOld-Ultralight.woff2') format('woff2'),
+      url('/fonts/PPEditorialOld-Ultralight.woff') format('woff');
+   font-weight: 200;
+   font-style: normal;
+   font-display: swap;
+}
+
+* {
+   box-sizing: border-box;
+}
+
+:root {
+   --font: #231F20;
+   --green: #2A4149;
+   --light-tan: #F0EFE3;
+   --light-color: #FFFFFF;
+}
+
+
+body {
+   font-family: 'Inter', sans-serif;
+   font-size: 16px;
+   color: var(--font);
+   margin: 0;
+   padding: 0;
+}
+
+a {
+   text-decoration: none;
+}
+
+.font-italic {
+   font-style: italic;
+   display: block;
+}
+
+section {
+   margin: 0 5rem;
+}
+
+@media screen and (max-width: 1024px) {
+   section {
+      margin-inline: 2.5rem;
+   }
+}
+
+@media screen and (max-width: 768px) {
+   section {
+      margin-inline: 1.25rem;
+   }
+}
