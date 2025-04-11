@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz@0,14..32;1,14..32&display=swap');
+
+@font-face {
+   font-family: 'PP Editorial Old';
+   src: url('/fonts/PPEditorialOld-UltralightItalic.woff2') format('woff2'),
+      url('/fonts/PPEditorialOld-UltralightItalic.woff') format('woff');
+   font-weight: 200;
+   font-style: italic;
+   font-display: swap;
+}
+
+@font-face {
+   font-family: 'PP Editorial Old';
+   src: url('/fonts/PPEditorialOld-Ultralight.woff2') format('woff2'),
+      url('/fonts/PPEditorialOld-Ultralight.woff') format('woff');
+   font-weight: 200;
+   font-style: normal;
+   font-display: swap;
+}
+
+* {
+   box-sizing: border-box;
+}
+
+:root {
+   --font: #231F20;
+   --green: #2A4149;
+   --light-tan: #F0EFE3;
+   --light-color: #FFFFFF;
+}
+
+
+body {
+   font-family: 'Inter', sans-serif;
+   color: var(--font);
+   margin: 0;
+   padding: 0;
+}
+
+a {
+   text-decoration: none;
+}
+
+.font-italic {
+   font-style: italic;
+   display: block;
+}
+
+section {
+   margin: 0 5rem;
+}
+
+/* NAVIGATION */
+nav {
+   display: flex;
+   padding: 1.5rem 5rem;
+   justify-content: space-between;
+   align-items: center;
+   height: 140px;
+}
+
+nav ul,
+nav img,
+nav #weather,
+nav .mobile-menu {
+   width: 33.33%;
+}
+
+nav ul {
+   list-style: none;
+   display: flex;
+   gap: 1.5rem;
+   padding: 0;
+}
+
+nav ul li,
+#weather {
+   font-weight: 300;
+   font-size: 0.8rem;
+   text-transform: uppercase;
+}
+
+nav ul li a {
+   color: var(--font);
+}
+
+nav img {
+   width: 10rem;
+   height: auto;
+}
+
+/* HAMBURGER MENU */
+nav .mobile-menu {
+   display: none;
+}
+nav #toggleNav {
+   position: relative;
+   width: 25px;
+   height: 20px;
+   border: 0;
+   background: none;
+   cursor: pointer;
+   overflow: hidden;
+}
+
+nav #toggleNav span {
+   opacity: 1;
+   left: 0;
+   display: block;
+   width: 100%;
+   height: 1.5px;
+   background-color: var(--font);
+   position: absolute;
+   transform: rotate(0deg);
+   transition: .4s ease-in-out;
+}
+
+nav #toggleNav span:nth-child(1) {
+   top: 0;
+}
+
+nav #toggleNav span:nth-child(2) {
+   top: 9px;
+}
+
+nav #toggleNav span:nth-child(3) {
+   top: 18px;
+}
+
+nav #toggleNav.open span:nth-child(1) {
+   transform: translateY(9px) rotate(135deg);
+}
+
+nav #toggleNav.open span:nth-child(2) {
+   opacity: 0;
+   transform: translateX(-60px);
+}
+
+nav #toggleNav.open span:nth-child(3) {
+   transform: translateY(-9px) rotate(-135deg);
+}
+
+/* WEATHER WIDGET */
+#weather {
+   text-align: right;
+}
+
+/* hero banner */
+#hero {
+   height: calc(100vh - 180px);
+   background-color: var(--green);
+   background-image: url('/assets/heropage.jpg');
+   background-size: cover;
+   background-position: center;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding-inline: 2rem;
+}
+
+#hero h1 {
+   color: var(--light-tan);
+   font-family: 'PP Editorial Old', sans-serif;
+   font-weight: 200;
+   font-size: calc(52px + (88 - 52) * ((100vw - 320px) / 1600));
+   line-height: 1.1;
+   margin: 0;
+   max-width: 900px;
+   text-align: center;
+}
+
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 1366px) {
+   nav .mobile-menu {
+      display: block;
+   }
+
+   nav ul {
+      display: none;
+   }
+
+   nav ul.active {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 100px;
+      left: 0;
+      width: 100%;
+      background-color: var(--light-color);
+      padding: 5rem 5rem;
+      margin: 0;
+      height: calc(100vh - 140px);
+   }
+
+   nav ul.active li {
+      font-size: 1.2rem;
+      text-align: center;
+      padding: 1rem 0;
+   }
+}
+
+@media screen and (max-width: 1024px) {
+   nav {
+      padding-inline: 2.5rem;
+      height: 100px;
+   }
+
+   nav ul.active {
+      height: calc(100vh - 100px);
+      padding-inline: 2.5rem;
+   }
+
+   nav img {
+      width: 8rem;
+   }
+
+   #hero {
+      height: calc(100vh - 140px);
+   }
+
+   section {
+      margin-inline: 2.5rem;
+   }
+}
+
+
+@media screen and (max-width: 768px) {
+   nav {
+      padding-inline: 1.25rem;
+   }
+
+   nav ul li,
+   #weather {
+      font-size: 0.7rem;
+   }
+
+   #hero {
+      height: calc(100vh - 120px);
+   }
+
+   section {
+      margin-inline: 1.25rem;
+   }
+}
