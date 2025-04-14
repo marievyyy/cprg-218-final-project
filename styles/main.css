@@ -104,30 +104,26 @@ nav #toggleNav.open span:nth-child(3) {
    justify-content: center;
    align-items: center;
    padding-inline: 2rem;
+   margin-inline: 5rem;
 }
 
 #hero h1 {
    color: var(--light-tan);
    font-family: 'PP Editorial Old', sans-serif;
    font-weight: 200;
-   font-size: calc(52px + (88 - 52) * ((100vw - 320px) / 1600));
-   line-height: 0.6;
+   font-size: calc(48px + (88 - 52) * ((100vw - 320px) / 1600));
+   line-height: 110%;
    margin: 0;
    text-align: center;
-}
-
-#hero h1 span {
-   display: block;
 }
 
 /* ABOUT SECTION */
 #about {
    display: grid;
    grid-template-columns: repeat(12, 1fr);
-   grid-template-rows: repeat(6, 1fr);
+   grid-template-rows: repeat(5, 1fr);
    grid-column-gap: 10px;
    grid-row-gap: 20px;
-   padding-bottom: 0;
 }
 
 #about .about-content {
@@ -257,9 +253,6 @@ nav #toggleNav.open span:nth-child(3) {
    align-items: center;
    gap: 2rem;
    color: var(--light-tan);
-   /* max-width: 1260px;
-   margin: 0 auto;
-   padding-inline: 5rem; */
    z-index: 1;
 }
 
@@ -415,6 +408,7 @@ nav #toggleNav.open span:nth-child(3) {
 
    #hero {
       height: calc(100vh - 140px);
+      margin-inline: 2.5rem;
    }
 
    /* ACTIVITIES */
@@ -436,6 +430,7 @@ nav #toggleNav.open span:nth-child(3) {
 
    #hero {
       height: calc(100vh - 120px);
+      margin-inline: 1.25rem;
    }
 
    /* ABOUT */
@@ -476,6 +471,11 @@ nav #toggleNav.open span:nth-child(3) {
 }
 
 @media screen and (max-width: 480px) {
+   /* ABOUT */
+   #about .about-image-1 {
+      margin-inline: auto;
+   }
+
    /* ACTIVITIES */
    #activities .promo-boxes {
       --column-count: 1;
