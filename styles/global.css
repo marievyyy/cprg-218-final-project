@@ -94,6 +94,102 @@ img {
    object-fit: cover;
 }
 
+/* NAVIGATION */
+nav {
+   display: flex;
+   padding: 1.5rem 5rem;
+   justify-content: space-between;
+   align-items: center;
+   height: 140px;
+}
+
+nav ul,
+nav img,
+nav #weather,
+nav .mobile-menu {
+   width: 33.33%;
+}
+
+nav ul {
+   list-style: none;
+   display: flex;
+   gap: 1.5rem;
+   padding: 0;
+}
+
+nav ul li,
+#weather {
+   font-weight: 300;
+   font-size: 0.8rem;
+   text-transform: uppercase;
+}
+
+nav ul li a {
+   color: var(--font);
+}
+
+nav img {
+   width: 10rem;
+   height: auto;
+}
+
+/* HAMBURGER MENU */
+nav .mobile-menu {
+   display: none;
+}
+
+nav #toggleNav {
+   position: relative;
+   width: 25px;
+   height: 20px;
+   border: 0;
+   background: none;
+   cursor: pointer;
+   overflow: hidden;
+}
+
+nav #toggleNav span {
+   opacity: 1;
+   left: 0;
+   display: block;
+   width: 100%;
+   height: 1.5px;
+   background-color: var(--font);
+   position: absolute;
+   transform: rotate(0deg);
+   transition: .4s ease-in-out;
+}
+
+nav #toggleNav span:nth-child(1) {
+   top: 0;
+}
+
+nav #toggleNav span:nth-child(2) {
+   top: 9px;
+}
+
+nav #toggleNav span:nth-child(3) {
+   top: 18px;
+}
+
+nav #toggleNav.open span:nth-child(1) {
+   transform: translateY(9px) rotate(135deg);
+}
+
+nav #toggleNav.open span:nth-child(2) {
+   opacity: 0;
+   transform: translateX(-60px);
+}
+
+nav #toggleNav.open span:nth-child(3) {
+   transform: translateY(-9px) rotate(-135deg);
+}
+
+/* WEATHER WIDGET */
+#weather {
+   text-align: right;
+}
+
 /* FOOTER */
 footer .container {
    display: flex;
@@ -140,12 +236,55 @@ footer .footer-secondary {
    padding-inline: 5rem;
 }
 
+@media screen and (max-width: 1366px) {
+   nav .mobile-menu {
+      display: block;
+   }
+
+   nav ul {
+      display: none;
+   }
+
+   nav ul.active {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 100px;
+      left: 0;
+      width: 100%;
+      background-color: var(--light-color);
+      padding: 5rem 5rem;
+      margin: 0;
+      height: calc(100vh - 140px);
+   }
+
+   nav ul.active li {
+      font-size: 1.2rem;
+      text-align: center;
+      padding: 1rem 0;
+   }
+}
+
 @media screen and (max-width: 1024px) {
    a.button {
       font-size: 10px;
       letter-spacing: 0.025rem;
       padding-block: 1rem;
       padding-inline: 2.2rem;
+   }
+
+   nav {
+      padding-inline: 2.5rem;
+      height: 100px;
+   }
+
+   nav ul.active {
+      height: calc(100vh - 100px);
+      padding-inline: 2.5rem;
+   }
+
+   nav img {
+      width: 8rem;
    }
 
    .container {
@@ -176,6 +315,15 @@ footer .footer-secondary {
 @media screen and (max-width: 768px) {
    body {
       font-size: 14px;
+   }
+
+   nav {
+      padding-inline: 1.25rem;
+   }
+
+   nav ul li,
+   #weather {
+      font-size: 0.7rem;
    }
 
    .container {
