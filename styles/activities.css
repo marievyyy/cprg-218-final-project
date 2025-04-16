@@ -63,7 +63,7 @@ details summary span {
 }
 
 details > * {
-   padding-left: 4rem;
+   padding-inline: 4rem;
 }
 
 details > :last-child {
@@ -167,6 +167,14 @@ footer {
 
 
 @media screen and (max-width: 1024px) {
+   details summary {
+      padding-right: 4rem;
+   }
+
+   details > * {
+      padding-inline: 1rem;
+   }
+
    #activities-quote {
       flex-wrap: wrap;
       height: auto;
