@@ -244,6 +244,7 @@ nav.active #weather {
    position: relative;
    height: 70vh;
    background-size: cover;
+   background-position: center;
    padding-top: calc(140px + 2rem);
    padding-bottom: 3rem;
    display: flex;
@@ -374,6 +375,7 @@ footer .footer-secondary {
 
    .container {
       margin-inline: 2.5rem;
+      padding-block: 2.5rem;
    }
 
    footer .footer-img {

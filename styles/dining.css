@@ -1,0 +1,160 @@
+#dining-page {
+   background-image: url('/assets/dining-hero-banner.jpg');
+}
+
+.dining-intro p {
+   width: 25rem;
+   text-align: center;
+   text-transform: uppercase;
+   letter-spacing: 0.09rem;
+   margin-inline: auto;
+}
+
+.panel-dining {
+   margin: 0 10rem;
+}
+
+.panel:nth-child(odd) p.subtitle,
+.panel:nth-child(odd) h2 {
+   text-align: right;
+}
+
+.panel:nth-child(odd) .panel-side {
+   flex-direction: row-reverse;
+}
+
+.panel p.subtitle {
+   margin-bottom: 4px;
+   letter-spacing: 0.06rem;
+   text-transform: uppercase;
+}
+
+.panel-side {
+   display: flex;
+   gap: 4rem;
+   margin-top: 2rem;
+}
+
+.panel-img {
+   aspect-ratio: 1;
+   width: calc(60% - 2rem);
+   max-width: 600px;
+   background-size: cover;
+   background-position: center;
+}
+
+.panel-content {
+   width: calc(40% - 2rem);
+}
+
+
+.panel-content img {
+   max-width: 1.5rem;
+   object-fit: contain;
+}
+
+.panel-side.dining-1 .panel-img {
+   background-image: url(/assets/dining-beachhouse.jpg);
+}
+
+.panel-side.dining-2 .panel-img {
+   background-image: url(/assets/dining-sandbar.jpg);
+}
+
+.panel-side.dining-3 .panel-img {
+   background-image: url(/assets/dining-poolside.jpg);
+}
+
+.panel-side.dining-4 .panel-img {
+   background-image: url(/assets/dining-lounge.jpg);
+}
+
+/* mini-box */
+.mini-boxes {
+   --column-count: 3;
+   --gap-x: 3rem;
+   --gap-x-sum: (var(--gap-x) * (var(--column-count) - 1));
+   --item-width: calc((100% - var(--gap-x-sum)) / var(--column-count));
+   display: flex;
+   flex-flow: row wrap;
+   justify-content: space-between;
+   gap: 3rem;
+   margin-top: 4rem;
+}
+
+.mini-box {
+   width: var(--item-width);
+   background-color: var(--light-tan);
+   padding: 2rem;
+   max-width: 400px;
+}
+
+.mini-box h3 {
+   font-size: calc(20px + (32 - 20) * ((100vw - 320px) / 1600));
+   margin-bottom: 2rem;
+}
+
+footer {
+   border-top: 0.5px solid rgba(35, 31, 32, 0.40);
+}
+
+@media screen and (max-width: 1366px) {
+   .panel-dining {
+      margin: 0 5rem;
+   }
+}
+
+@media screen and (max-width: 1024px) {
+   .panel-side,
+   .panel:nth-child(odd) .panel-side {
+      flex-direction: column;
+      gap: 2rem;
+   }
+
+   .panel-img {
+      aspect-ratio: auto;
+      height: 15rem;
+      width: 100%;
+      max-width: 100%;
+   }
+
+   .panel-content {
+      width: 100%;
+   }
+
+   .panel-side.dining-1 .panel-img {
+      background-image: url(/assets/dining-beachhouse-mobile.jpg);
+   }
+
+   .panel-side.dining-2 .panel-img {
+      background-image: url(/assets/dining-sandbar-mobile.jpg);
+   }
+
+   .panel-side.dining-3 .panel-img {
+      background-image: url(/assets/dining-poolside-mobile.jpg);
+   }
+
+   .panel-side.dining-4 .panel-img {
+      background-image: url(/assets/dining-lounge-mobile.jpg);
+   }
+
+   .mini-boxes {
+      --column-count: 2;
+   }
+
+}
+
+@media screen and (max-width: 768px) {
+   .dining-intro p{
+      width: 80%;
+   }
+
+   .panel-dining {
+      margin: 0 1.25rem;
+   }
+
+   .mini-boxes {
+      --column-count: 1;
+      justify-content: center;
+   }
+}
