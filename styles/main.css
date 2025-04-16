@@ -222,18 +222,6 @@
    margin: 4rem auto 0;
 }
 
-#home-reviews .overlay {
-   content: '';
-   position: absolute;
-   top: 0;
-   left: 0;
-   width: 100%;
-   height: 100%;
-   background: rgba(35, 31, 32, 0.80);
-   backdrop-filter: blur(15px);
-   pointer-events: none;
-}
-
 
 /* MEDIA QUERIES */
 @media screen and (min-width: 1600px) {

@@ -90,3 +90,84 @@ details::details-content {
    transition: height 0.3s, content-visibility 0.3s;
    transition-behavior: allow-discrete;
 }
+
+#activities-info {
+   position: relative;
+   background-image: url('/assets/heropage.jpg');
+}
+
+#activities-info .container {
+   position: relative;
+   color: var(--light-tan);
+   z-index: 1;
+}
+
+#activities-info h2 {
+   color: var(--light-tan);
+   margin-bottom: 3rem;
+}
+
+#activities-info ul {
+   list-style: none;
+}
+
+#activities-info ul li {
+   position: relative;
+   padding: 2rem 2rem;
+   border-bottom: 1px solid rgba(240, 239, 227, 0.80);
+}
+
+#activities-info ul li::before {
+   content: '';
+   position: absolute;
+   top: 50%;
+   left: 10px;
+   height: 0.6rem;
+   width: 0.6rem;
+   border-radius: 50%;
+   background-color: var(--light-tan);
+   transform: translateY(-50%);
+}
+
+
+#activities-quote {
+   display: flex;
+   justify-content: space-around;
+   height: 70vh;
+   gap: 2rem;
+}
+
+#activities-quote img {
+   flex-shrink: 0;
+   height: auto;
+}
+
+#activities-quote p {
+   align-self: center;
+   width: 20rem;
+   text-align: center;
+   text-transform: uppercase;
+   letter-spacing: 0.09rem;
+}
+
+#activities-quote img:first-of-type {
+   max-width: 14rem;
+   margin-bottom: auto;
+}
+
+#activities-quote img:last-of-type {
+   max-width: 14.125rem;
+   margin-top: auto;
+}
+
+footer {
+   border-top: 0.5px solid rgba(35, 31, 32, 0.40);
+}
+
+
+@media screen and (max-width: 1024px) {
+   #activities-quote {
+      flex-wrap: wrap;
+      height: auto;
+   }
+}
