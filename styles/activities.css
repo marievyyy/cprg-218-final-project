@@ -1,0 +1,92 @@
+.center {text-align: center;}
+
+#activities-page {
+   background-image: url('/assets/activities-hero-banner.jpg');
+}
+
+h3 {
+   font-size: calc(24px + (32 - 24) * ((100vw - 320px) / 1600));
+}
+
+p.subtitle {
+   text-transform: uppercase;
+   letter-spacing: 0.08rem;
+}
+
+.accordion {
+   display: flex;
+   flex-direction: column;
+   max-width: 930px;
+   margin: 5rem auto 0;
+}
+
+details {
+   border-bottom: 1px solid var(--font);
+   background-color: transparent;
+   transition: background-color 0.3s ease-in;
+}
+
+details:hover {
+   background-color: rgba(181, 208, 237, 0.20);
+}
+
+details summary {
+   position: relative;
+   list-style: none;
+   cursor: pointer;
+   padding: 2rem 1.3rem;
+}
+
+details summary::before {
+   content: '';
+   position: absolute;
+   right: 1.4rem;
+   top: 50%;
+   right: calc(2rem - 9px);
+   width: 20px;
+   height: 1px;
+   background-color: var(--font);
+}
+
+details summary::after {
+   content: '';
+   position: absolute;
+   right: 2rem;
+   top: calc(50% - 10px);
+   width: 1px;
+   height: 20px;
+   background-color: var(--font);
+}
+
+details summary span {
+   margin-right: 0.8rem;
+}
+
+details > * {
+   padding-left: 4rem;
+}
+
+details > :last-child {
+   padding-bottom: 2rem;
+}
+
+details::details-content {
+   overflow: hidden;
+   height: 0;
+   transition: height 0.3s;
+}
+
+details[open] {
+   background-color: var(--sky);
+}
+
+details[open]::details-content {
+   height: auto;
+}
+
+details::details-content {
+   overflow: hidden;
+   height: 0;
+   transition: height 0.3s, content-visibility 0.3s;
+   transition-behavior: allow-discrete;
+}

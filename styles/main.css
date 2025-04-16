@@ -172,6 +172,8 @@
    z-index: 1;
 }
 
+#home-reviews h2 {color: var(--light-tan);}
+
 #home-reviews h2,
 #home-reviews .reviews-btn {
    flex: 1 0 100%;
