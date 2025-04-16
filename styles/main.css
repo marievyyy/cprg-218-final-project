@@ -1,4 +1,19 @@
+/* NAVIGATION */
+#main-page nav {
+   position: relative;
+}
 
+#main-page nav ul li a {
+   color: var(--font);
+}
+
+#main-page nav #toggleNav span {
+   background-color: var(--font);
+}
+
+#main-page #weather {
+   color: var(--font);
+}
 
 /* HERO BANNER */
 #hero {
@@ -15,12 +30,6 @@
 }
 
 #hero h1 {
-   color: var(--light-tan);
-   font-family: 'PP Editorial Old', sans-serif;
-   font-weight: 200;
-   font-size: calc(48px + (88 - 52) * ((100vw - 320px) / 1600));
-   line-height: 110%;
-   margin: 0;
    text-align: center;
 }
 

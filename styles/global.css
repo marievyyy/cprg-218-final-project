@@ -31,6 +31,7 @@
 
 
 body {
+   position: relative;
    font-family: 'Inter', sans-serif;
    font-size: 15px;
    font-weight: 300;
@@ -38,6 +39,15 @@ body {
    line-height: 1.6;
    margin: 0;
    padding: 0;
+}
+
+h1 {
+   color: var(--light-tan);
+   font-family: 'PP Editorial Old', sans-serif;
+   font-weight: 200;
+   font-size: calc(48px + (88 - 52) * ((100vw - 320px) / 1600));
+   line-height: 110%;
+   margin: 0;
 }
 
 h2 {
@@ -96,11 +106,20 @@ img {
 
 /* NAVIGATION */
 nav {
+   position: absolute;
+   top: 0;
    display: flex;
    padding: 1.5rem 5rem;
    justify-content: space-between;
    align-items: center;
    height: 140px;
+   width: 100%;
+   z-index: 3;
+   transition: all 0.3s ease-in;
+}
+
+nav.active {
+   background-color: var(--light-color);
 }
 
 nav ul,
@@ -125,6 +144,10 @@ nav ul li,
 }
 
 nav ul li a {
+   color: var(--light-tan);
+}
+
+nav.active ul li a {
    color: var(--font);
 }
 
@@ -154,10 +177,14 @@ nav #toggleNav span {
    display: block;
    width: 100%;
    height: 1.5px;
-   background-color: var(--font);
+   background-color: var(--light-tan);
    position: absolute;
    transform: rotate(0deg);
    transition: .4s ease-in-out;
+}
+
+nav.active #toggleNav span {
+   background-color: var(--green);
 }
 
 nav #toggleNav span:nth-child(1) {
@@ -188,6 +215,44 @@ nav #toggleNav.open span:nth-child(3) {
 /* WEATHER WIDGET */
 #weather {
    text-align: right;
+   color: var(--light-tan);
+   transition: color 0.3s ease-in;
+}
+
+nav.active #weather {
+   color: var(--font);
+}
+
+/* PAGE BANNER */
+.page-hero-banner {
+   position: relative;
+   height: 70vh;
+   background-size: cover;
+   padding-top: calc(140px + 2rem);
+   padding-bottom: 3rem;
+   display: flex;
+   align-items: flex-end;
+}
+
+.page-hero-banner .container {
+   position: relative;
+   width: 100%;
+   z-index: 2;
+}
+
+.page-hero-banner p {
+   color: var(--light-tan);
+   max-width: 24rem;
+}
+
+.page-hero-banner .overlay-black {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background: linear-gradient(180deg, rgba(0, 0, 0, 0.80) 0%, rgba(0, 0, 0, 0.00) 100%);
+   pointer-events: none;
 }
 
 /* FOOTER */
