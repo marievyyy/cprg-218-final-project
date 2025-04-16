@@ -61,7 +61,8 @@ h2 {
 h3 {
    font-family: 'PP Editorial Old', sans-serif;
    font-weight: 200;
-   font-size: calc(32px + (48 - 32) * ((100vw - 320px) / 1600));   line-height: 1.1;
+   font-size: calc(32px + (48 - 32) * ((100vw - 320px) / 1600));   
+   line-height: 1.1;
    margin: 0;
 }
 
@@ -350,6 +351,10 @@ footer .footer-secondary {
 
    nav img {
       width: 8rem;
+   }
+
+   .page-hero-banner p {
+      max-width: 20rem;
    }
 
    .container {

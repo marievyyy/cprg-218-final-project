@@ -1,3 +1,158 @@
 #rooms-page {
    background-image: url('/assets/rooms-hero-banner.jpg');
 }
+
+/* SIDE BY SIDE PANEL */
+.panel:not(:last-of-type) {
+   border-bottom: 1px solid var(--font);
+}
+
+.panel-side {
+   display: flex;
+   justify-content: space-between;
+   gap: 8rem;
+}
+
+.panel-img {
+   width: calc(60% - 4rem);
+   width: 100%;
+   height: 40rem;
+   max-width: 600px;
+   background-size: cover;
+   background-position: center;
+}
+
+.panel-content {
+   width: calc(40% - 4rem);
+}
+
+.panel-content h2 {max-width: 75%;}
+
+.panel-content p {
+   max-width: 65%;
+}
+
+.panel-content ul {
+   list-style: none;
+   padding-left: 0;
+   margin-top: 5rem;
+}
+
+.panel-content li {
+   display: flex;
+   gap: 1rem;
+   margin-bottom: 1.2rem;
+}
+
+.panel-content img {
+   max-width: 1.5rem;
+   object-fit: contain;
+}
+
+.panel-side.room-1 .panel-img {
+   background-image: url(/assets/room-ocean-view.jpg);
+}
+
+.panel-side.room-2 .panel-img {
+   background-image: url(/assets/room-beachfront.jpg);
+}
+
+.panel-side.room-3 .panel-img {
+   background-image: url(/assets/room-garden.jpg);
+}
+
+.panel-side.room-4 .panel-img {
+   background-image: url(/assets/room-ocean-premium.jpg);
+}
+
+.panel-side.room-5 .panel-img {
+   background-image: url(/assets/room-accessible.jpg);
+}
+
+@media screen and (max-width: 1280px) {
+   .panel-side {
+      gap: 4rem;
+   }
+
+   .panel-img {
+      width: calc(60% - 2rem);
+      max-width: 600px;
+   }
+
+   .panel-content {
+      width: calc(40% - 2rem);
+   }
+}
+
+@media screen and (max-width: 1024px) {
+   .panel-side {
+      flex-direction: column;
+   }
+
+   .panel-img,
+   .panel-content {
+      width: 100%;
+   }
+
+   .panel-img {
+      max-width: 100%;
+      height: 20rem;
+   }
+
+   .panel-content {
+      display: flex;
+   }
+
+   .panel-content h2 {
+      max-width: 100%;
+   }
+
+   .panel-content ul {margin-top: 0;}
+
+   .panel-content .panel-title,
+   .panel-content ul {
+      width: 50%;
+   }
+
+   .panel-side.room-1 .panel-img {
+      background-image: url(/assets/room-ocean-view-mobile.jpg);
+   }
+
+   .panel-side.room-2 .panel-img {
+      background-image: url(/assets/room-beachfront-mobile.jpg);
+   }
+
+   .panel-side.room-3 .panel-img {
+      background-image: url(/assets/room-garden-mobile.jpg);
+   }
+
+   .panel-side.room-4 .panel-img {
+      background-image: url(/assets/room-ocean-premium-mobile.jpg);
+   }
+
+   .panel-side.room-5 .panel-img {
+      background-image: url(/assets/room-accessible-mobile.jpg);
+   }
+
+}
+
+@media screen and (max-width: 768px) {
+   .panel-content {
+      display: block;
+   }
+
+   .panel-content .panel-title,
+   .panel-content ul {
+      width: 100%;
+   }
+
+   .panel-content ul {
+      margin-top: 3rem;
+   }
+}
+
+@media screen and (max-width: 480px) {
+   .panel-content p {
+      max-width: 100%;
+   }
+}
