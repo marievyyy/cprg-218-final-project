@@ -43,6 +43,10 @@ body {
    padding: 0;
 }
 
+body.nav-active {
+   overflow: hidden;
+}
+
 h1 {
    color: var(--light-tan);
    font-family: 'PP Editorial Old', sans-serif;
@@ -70,7 +74,26 @@ h3 {
 }
 
 a {
+   display: inline-block;
+   position: relative;
    text-decoration: none;
+   color: inherit;
+}
+
+a:not(.logo-link):not(.button)::after {
+   content: '';
+   position: absolute;
+   width: 0;
+   height: 1px;
+   bottom: -2px;
+   left: 0;
+   background-color: var(--light-tan);
+   transition: width 0.5s ease;
+}
+
+a:not(.logo-link):not(.button):hover::after,
+a.active:not(.logo-link):not(.button)::after {
+   width: 20px;
 }
 
 a.button {
@@ -82,11 +105,20 @@ a.button {
    text-transform: uppercase;
    padding-block: 1.2rem;
    padding-inline: 2.5rem;
+   transition: all 0.3s ease;
+}
+
+a.button:hover {
+   background-color: var(--font);
 }
 
 a.button.secondary {
    background-color: var(--light-tan);
    color: var(--font);
+}
+
+a.button.secondary:hover {
+   background-color: var(--sky);
 }
 
 small {
@@ -328,11 +360,13 @@ footer .footer-socials {
 }
 
 footer .footer-secondary {
+   position: relative;
    display: flex;
    justify-content: space-between;
    padding: 20px;
    background-color: var(--light-tan);
    padding-inline: 5rem;
+   z-index: 2;
 }
 
 @media screen and (max-width: 1366px) {
@@ -348,7 +382,7 @@ footer .footer-secondary {
       display: flex;
       flex-direction: column;
       position: absolute;
-      top: 100px;
+      top: 140px;
       left: 0;
       width: 100%;
       background-color: var(--light-color);
@@ -379,6 +413,7 @@ footer .footer-secondary {
 
    nav ul.active {
       height: calc(100vh - 100px);
+      top: 100px;
       padding-inline: 2.5rem;
    }
 

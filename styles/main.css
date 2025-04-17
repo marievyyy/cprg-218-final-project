@@ -7,6 +7,10 @@
    color: var(--font);
 }
 
+#main-page nav ul li a::after {
+   background-color: var(--font);
+}
+
 #main-page nav #toggleNav span {
    background-color: var(--font);
 }
@@ -221,6 +225,10 @@
    order: 4;
    text-align: center;
    margin: 4rem auto 0;
+}
+
+#home-reviews .reviews-btn a {
+   display: inline-block;
 }
 
 
