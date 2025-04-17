@@ -375,26 +375,66 @@ footer .footer-secondary {
    }
 
    nav ul {
-      display: none;
-   }
-
-   nav ul.active {
       display: flex;
       flex-direction: column;
+      align-items: center;
       position: absolute;
       top: 140px;
       left: 0;
       width: 100%;
       background-color: var(--light-color);
-      padding: 5rem 5rem;
+      padding: 5rem;
       margin: 0;
+      transform: scaleY(0);
+      transform-origin: top center;
+      transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
       height: calc(100vh - 140px);
+      pointer-events: none;
    }
 
+   nav ul.active {
+      transform: scaleY(1);
+      pointer-events: auto;
+   }
+
+   nav ul li {
+      transform: scaleY(0);
+      transition: none;
+      opacity: 0;
+   }
+   
    nav ul.active li {
       font-size: 1.2rem;
       text-align: center;
       padding: 1rem 0;
+      opacity: 1;
+      transform: scaleY(1);
+      transition: all .3s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+      transition-delay: .1s;
+   }
+
+   nav ul.active li:nth-child(2) {
+      transition-delay: .2s;
+   }
+
+   nav ul.active li:nth-child(3) {
+      transition-delay: .3s;
+   }
+
+   nav ul.active li:nth-child(4) {
+      transition-delay: .4s;
+   }
+
+   nav ul.active li:nth-child(5) {
+      transition-delay: .5s;
+   }
+
+   nav ul li a:not(.logo-link):not(.button)::after {
+      background-color: var(--font);
+   }
+
+   a.active:not(.logo-link):not(.button)::after {
+      width: 100%;
    }
 }
 
