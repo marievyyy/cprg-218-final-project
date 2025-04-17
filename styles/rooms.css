@@ -69,6 +69,10 @@
    background-image: url(/assets/room-accessible.jpg);
 }
 
+footer {
+   border-top: 0.5px solid rgba(35, 31, 32, 0.40);
+}
+
 @media screen and (max-width: 1280px) {
    .panel-side {
       gap: 4rem;

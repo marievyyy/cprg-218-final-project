@@ -116,6 +116,7 @@ details::details-content {
    position: relative;
    padding: 2rem 2rem;
    border-bottom: 1px solid rgba(240, 239, 227, 0.80);
+   text-transform: uppercase;
 }
 
 #activities-info ul li::before {
