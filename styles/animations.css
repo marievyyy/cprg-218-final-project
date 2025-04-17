@@ -1,0 +1,79 @@
+@keyframes fade-in {
+   0% {
+      opacity: 0;
+   }
+
+   100% {
+      opacity: 1;
+   }
+}
+
+@keyframes fade-in-ttb {
+   0% {
+      opacity: 0;
+      transform: translateY(calc(-1 * 60px));
+   }
+
+   100% {
+      opacity: 1;
+      transform: translateY(0);
+   }
+}
+
+@keyframes slide-out-x {
+   0% {
+      transform: scaleX(1);
+   }
+
+   100% {
+      transform: scaleX(0);
+   }
+}
+
+@keyframes slide-out-y {
+   0% {
+      transform: scaleY(1);
+   }
+
+   100% {
+      transform: scaleY(0);
+   }
+}
+
+@keyframes scale-out {
+   0% {
+      transform: scale(1.2);
+   }
+
+   100% {
+      transform: scale(1);
+   }
+}
+
+
+@media (min-width: 1025px) and (prefers-reduced-motion: no-preference) {
+
+   .animate {
+      opacity: 0;
+   }
+
+   nav.animated a.logo-link {
+      animation: 1s cubic-bezier(0.83, 0, 0.17, 1) fade-in both;
+   }
+
+   nav.animated ul,
+   nav.animated #weather {
+      animation: 1s cubic-bezier(0.83, 0, 0.17, 1) fade-in both;
+      animation-delay: 0.3s;
+   }
+
+   section#hero .hero-title.animated {
+      animation: 1s cubic-bezier(0.83, 0, 0.17, 1) fade-in-ttb both;
+   }
+
+   .section-content-title.animated h2 {
+      animation: 1s cubic-bezier(0.83, 0, 0.17, 1) fade-in-ttb both;
+   }
+
+}
+

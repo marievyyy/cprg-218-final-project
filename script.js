@@ -26,6 +26,46 @@ const links = document.querySelectorAll('nav a');
    }
 });
 
+// animation
+const observer = new IntersectionObserver((entries, obs) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.remove('animate');
+      entry.target.classList.add('animated');
+      obs.unobserve(entry.target);
+    }
+  });
+}, {
+  rootMargin: '-100px',   
+  threshold: 0           
+});
+
+document.querySelectorAll('.animate').forEach(el => {
+  observer.observe(el);
+});
+
+
+// parallax
+// pick a speed factor (0.2 = very slow, 1 = scroll‑match)
+const speed = 0.5;
+
+// grab every .parallax element
+const parallaxEls = document.querySelectorAll('.parallax');
+
+let raf = false;
+window.addEventListener('scroll', () => {
+  if (!raf) {
+    window.requestAnimationFrame(() => {
+      const offset = window.pageYOffset * speed;
+      parallaxEls.forEach(el => {
+        el.style.backgroundPositionY = `${offset}px`;
+      });
+      raf = false;
+    });
+    raf = true;
+  }
+});
+
 
 // Weather
 fetch(`https://api.openweathermap.org/data/2.5/weather?q=Cancun&appid=e361073631e2c1f68dcc5845794ce885&units=metric`)

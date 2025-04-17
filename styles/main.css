@@ -37,6 +37,10 @@
    text-align: center;
 }
 
+#hero .hero-title {
+   overflow: hidden;
+}
+
 /* ABOUT SECTION */
 #about {
    display: grid;
@@ -57,20 +61,37 @@
    max-width: 320px;
 }
 
-#about img {
+#about .about-image {
+   position: relative;
    width: 100%;
+   overflow: hidden;
+}
+
+#about .about-image::after,
+.accommodation-boxes .accommodation-box-img::after {
+   position: absolute;
+   content: '';
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: var(--light-color);
+   transform-origin: 0% 50%;
 }
 
 #about .about-image-1 {
+   aspect-ratio: 430/378;
    grid-column: 4/8;
    grid-row: 1/4;
+   max-width: 300px;
 }
 
 #about .about-image-2 {
+   aspect-ratio: 430/479;
    grid-column: 9/13;
    grid-row: 3/7;
+   max-width: 420px;
 }
-
 
 /* ACTIVITIES OR EXPERIENCES */
 #activities {
@@ -100,6 +121,17 @@
    position: relative;
    width: var(--item-width);
    max-width: 350px;
+}
+
+#activities .promo-boxes .promo-box::after {
+   position: absolute;
+   content: '';
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: var(--light-tan);
+   transform-origin: 50% 100%;
 }
 
 #activities .promo-box .promo-content {
@@ -141,7 +173,8 @@
    border-bottom: none;
 }
 
-.accommodation-box img {
+.accommodation-box-img {
+   position: relative;
    width: 65%;
    max-width: 700px;
    height: auto;
@@ -152,6 +185,14 @@
    flex-flow: column;
    align-items: flex-start;
    width: 35%;
+}
+
+.accommodation-box .accommodation-box-img {
+   overflow: hidden;
+}
+
+.accommodation-box .accommodation-box-img::after {
+   transform-origin: right center;
 }
 
 .accommodation-box a.button {
@@ -179,7 +220,7 @@
 
 #home-reviews h2 {color: var(--light-tan);}
 
-#home-reviews h2,
+#home-reviews .section-content-title,
 #home-reviews .reviews-btn {
    flex: 1 0 100%;
 }
@@ -242,7 +283,7 @@
 
 @media screen and (max-width: 1366px) {
    /* ACCOMMODATIONS */
-   .accommodation-box img {
+   .accommodation-box-img {
       width: 50%;
    }
 
@@ -304,13 +345,13 @@
       flex-direction: column;
    }
 
-   #about img {
+   #about .about-image-1 {
       align-self: flex-end;
       max-width: 300px;
       margin-right: 4rem;
    }
 
-   #about img:last-of-type {
+   #about .about-image-2 {
       display: none;
    }
 
@@ -320,7 +361,7 @@
       gap: 1.2rem;
    }
 
-   .accommodation-box img,
+   .accommodation-box-img,
    .accommodation-box .accommodation-content {
       width: 100%;
    }
@@ -354,4 +395,70 @@
       --column-count: 1;
    }
    
+}
+
+
+/* ANIMATIONS */
+@media (min-width: 1025px) and (prefers-reduced-motion: no-preference) {
+
+   #about .about-image.animated::after,
+   .accommodation-box.animated .accommodation-box-img::after {
+      animation: 1s cubic-bezier(0.83, 0, 0.17, 1) slide-out-x both;
+   }
+
+   #about .about-image-2.animated::after {
+      animation-delay: 0.2s;
+   }
+
+   #about .about-image.animated img,
+   .accommodation-box .accommodation-box-img img {
+      animation: 1s cubic-bezier(0.83, 0, 0.17, 1) scale-out both;
+   }
+
+   #about .about-image-2.animate img {
+      animation-delay: 0.3s;
+   }
+
+   #about .about-content.animated h2 {
+      animation: 1s cubic-bezier(0.83, 0, 0.17, 1) fade-in-ttb both;
+   }
+
+   #about .about-content.animated p {
+      animation: 0.6s cubic-bezier(0.83, 0, 0.17, 1) fade-in both;
+      animation-delay: 0.4s;
+   }
+
+   #activities h2.animated {
+      animation: 1s cubic-bezier(0.83, 0, 0.17, 1) fade-in both;
+   }
+
+   #activities .promo-box.animated::after {
+      animation: 0.8s cubic-bezier(0.83, 0, 0.17, 1) slide-out-y both;
+   }
+
+   #activities .promo-box:nth-child(2).animated::after {
+      animation-delay: 0.1s;
+   }
+
+   #activities .promo-box:nth-child(3).animated::after {
+      animation-delay: 0.2s;
+   }
+
+   #activities .promo-box:nth-child(4).animated::after {
+      animation-delay: 0.3s;
+   }
+
+   .accommodation-box.animated .accommodation-content {
+      animation: 1s cubic-bezier(0.83, 0, 0.17, 1) fade-in both;
+      animation-delay: 0.3s;
+   }
+
+   .reviews-box.animated {
+      animation: 1s cubic-bezier(0.83, 0, 0.17, 1) fade-in both;
+   }
+
+   .reviews-box:nth-of-type(2).animated {
+      animation-delay: 0.3s;
+   }
+
 }

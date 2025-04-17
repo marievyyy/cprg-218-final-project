@@ -9,11 +9,12 @@
    <link rel="icon" href="favicon.png" type="image/x-icon">
    <link rel="stylesheet" href="/styles/global.css">
    <link rel="stylesheet" href="/styles/main.css">
+   <link rel="stylesheet" href="/styles/animations.css">
 </head>
 
 <body id="main-page">
    <header>
-      <nav class="navbar" id="mainNav">
+      <nav class="navbar animate" id="mainNav">
          <div class="mobile-menu">
             <button id="toggleNav">
                <span></span>
@@ -40,46 +41,56 @@
 
       <section id="hero">
          <div class="container">
-            <h1>Shangri La Beach Resort<span class="font-italic"> <br>Your Dream Getaway</span></h1>
+            <div class="hero-title animate">
+               <h1>Shangri La Beach Resort<span class="font-italic"> <br>Your Dream Getaway</span></h1>
+            </div>
          </div>
       </section>
    </header>
    <main>
       <section id="about" class="container">
-         <div class="about-content">
-            <h2>Escape to <span class="font-italic">Paradise</span></h2>
+         <div class="about-content animate">
+            <div class="section-content-title">
+               <h2>Escape to <span class="font-italic">Paradise</span></h2>
+            </div>
+            
             <p>Indulge in luxury and breathtaking views at Shangri La Beach Resort.</p>
          </div>
-         <img src="/assets/home-paradise.jpg" alt="Shangri La Beach Resort" class="about-image-1"><img
-            src="/assets/home-paradise-2.jpg" alt="Shangri La Beach Resort" class="about-image-2">
+         <div class="about-image about-image-1 animate">
+            <img src="/assets/home-paradise.jpg" alt="Shangri La Beach Resort">
+         </div>
+         <div class="about-image about-image-2 animate">
+            <img src="/assets/home-paradise-2.jpg" alt="Shangri La Beach Resort" >
+         </div>
+         
       </section>
 
       <section id="activities">
          <div class="container">
-            <h2>Experience <br> <span class="font-italic">Unforgettable</span> Moments</h2>
+            <h2 class="animate">Experience <br> <span class="font-italic">Unforgettable</span> Moments</h2>
             <div class="promo-boxes">
-               <div class="promo-box">
+               <div class="promo-box animate">
                   <div class="promo-content">
                      <h3>Private Beach Access</h3>
                      <p>Step onto our pristine, white-sand beach.</p>
                   </div>
                   <img src="/assets/activity-beach-access.jpg" alt="Private Beach Access">
                </div>
-               <div class="promo-box">
+               <div class="promo-box animate">
                   <div class="promo-content">
                      <h3>Infinity Pool</h3>
                      <p>Relax by our stunning oceanfront infinity pool.</p>
                   </div>
                   <img src="/assets/activity-infinity-pool.jpg" alt="Infinity Pool" class="promo-image">
                </div>
-               <div class="promo-box">
+               <div class="promo-box animate">
                   <div class="promo-content">
                      <h3>World-Class Spa</h3>
                      <p>Rejuvenate your mind and body at our spa.</p>
                   </div>
                   <img src="/assets/activity-spa.jpg" alt="World-Class Spa" class="promo-image">
                </div>
-               <div class="promo-box">
+               <div class="promo-box animate">
                   <div class="promo-content">
                      <h3>Exquisite Dining</h3>
                      <p>Savor culinary delights at our restaurants.</p>
@@ -91,39 +102,49 @@
       </section>
 
       <section id="home-accommodation" class="container">
-         <h2>Our <span class="font-italic">Luxurious</span> <br> Accommodations</h2>
+         <div class="section-content-title animate">
+            <h2>Our <span class="font-italic">Luxurious</span> <br> Accommodations</h2>
+         </div>
          <div class="accommodation-boxes">
-            <div class="accommodation-box">
-               <img src="/assets/home-accomodation-1.jpg" alt="Ocean View Deluxe Room">
+            <div class="accommodation-box animate">
+               <div class="accommodation-box-img">
+                  <img src="/assets/home-accomodation-1.jpg" alt="Ocean View Deluxe Room">
+               </div>
                <div class="accommodation-content">
                   <h3>Ocean View Deluxe Room</h3>
                   <p>Enjoy stunning ocean views from your private balcony.</p>
-                  <a href="#" class="button">View Details</a>
+                  <a href="room.html#room-1" class="button">View Details</a>
                </div>
             </div>
-            <div class="accommodation-box">
-               <img src="/assets/home-accomodation-2.jpg" alt="Beachfront Suite">
+            <div class="accommodation-box animate">
+               <div class="accommodation-box-img">
+                  <img src="/assets/home-accomodation-2.jpg" alt="Beachfront Suite">
+               </div>
                <div class="accommodation-content">
                   <h3>Beachfront Suite</h3>
                   <p>Step directly onto the sand from your spacious suite.</p>
-                  <a href="#" class="button">View Details</a>
+                  <a href="room.html#room-2" class="button">View Details</a>
                </div>
             </div>
-            <div class="accommodation-box">
-               <img src="/assets/home-accomodation-3.jpg" alt="Garden View Family Room">
+            <div class="accommodation-box animate">
+               <div class="accommodation-box-img">
+                  <img src="/assets/home-accomodation-3.jpg" alt="Garden View Family Room">
+               </div>
                <div class="accommodation-content">
                   <h3>Garden View Family Room</h3>
                   <p>Perfect for families, with ample space and garden views.</p>
-                  <a href="#" class="button">View Details</a>
+                  <a href="room.html#room-3" class="button">View Details</a>
                </div>
             </div>
          </div>
       </section>
 
-      <section id="home-reviews">
+      <section id="home-reviews" class="parallax">
          <div class="container">
-            <h2>What <span class="font-italic">Our Guests</span> <br> Are Saying</h2>
-            <div class="reviews-box left">
+            <div class="section-content-title animate">
+               <h2>What <span class="font-italic">Our Guests</span> <br> Are Saying</h2>
+            </div>
+            <div class="reviews-box left animate">
                <p>Our stay at Shangri La was absolutely perfect! The service was impeccable, and the views were
                   breathtaking.<span>&mdash; Sarah M.</span></p>
             </div>
@@ -132,12 +153,12 @@
                <img src="/assets/home-review-1.jpg" alt="Hotel">
                <img src="/assets/home-review-2.jpg" alt="Hotel Dining">
             </div>
-            <div class="reviews-box right">
+            <div class="reviews-box right animate">
                <p>The beachfront suite was amazing! Waking up to the sound of the waves and stepping right onto the sand
                   was incredible.<span>&mdash; John B.</span></p>
             </div>
             <div class="reviews-btn">
-               <a href="#" class="button secondary">Read More Testimonials</a>
+               <a href="testimonials.html" class="button secondary">Read More Testimonials</a>
             </div>
          </div>
          <div class="overlay"></div>
