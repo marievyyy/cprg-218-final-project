@@ -1,0 +1,87 @@
+#testimonials-page {
+   background-image: url('/assets/testimonials-hero-banner.jpg');
+}
+
+/* mini-box */
+.mini-boxes {
+   --column-count: 3;
+   --gap-x: 3rem;
+   --gap-x-sum: (var(--gap-x) * (var(--column-count) - 1));
+   --item-width: calc((100% - var(--gap-x-sum)) / var(--column-count));
+   display: flex;
+   flex-flow: row wrap;
+   justify-content: space-between;
+   gap: 3rem;
+   margin-top: 4rem;
+}
+
+.mini-box {
+   width: var(--item-width);
+   background-color: var(--light-tan);
+   padding: 2rem;
+   max-width: 400px;
+}
+
+.mini-box .review-author {
+   font-family: 'PP Editorial Old', sans-serif;
+   font-weight: 200;
+   font-size: calc(18px + (24 - 18) * ((100vw - 320px) / 1600));
+   color: var(--green);
+   font-style: italic;
+   margin-top: 5rem;
+   margin-bottom: 0;
+   text-align: right;
+}
+
+#testimonials-quote {
+   display: flex;
+   justify-content: space-around;
+   height: 70vh;
+   gap: 2rem;
+}
+
+#testimonials-quote img {
+   flex-shrink: 0;
+   height: auto;
+}
+
+#testimonials-quote p {
+   align-self: center;
+   width: 20rem;
+   text-align: center;
+   text-transform: uppercase;
+   letter-spacing: 0.09rem;
+}
+
+#testimonials-quote img:first-of-type {
+   max-width: 14rem;
+   margin-bottom: auto;
+}
+
+#testimonials-quote img:last-of-type {
+   max-width: 14.125rem;
+   margin-top: auto;
+}
+
+footer {
+   border-top: 0.5px solid rgba(35, 31, 32, 0.40);
+}
+
+@media screen and (max-width: 1024px) {
+   #testimonials-quote {
+      flex-wrap: wrap;
+      height: auto;
+   }
+
+   .mini-boxes {
+      --column-count: 2;
+   }
+}
+
+@media screen and (max-width: 768px) {
+   .mini-boxes {
+      --column-count: 1;
+      justify-content: center;
+   }
+}
+
