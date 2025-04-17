@@ -71,6 +71,7 @@
 /* ACTIVITIES OR EXPERIENCES */
 #activities {
    background-color: var(--light-tan);
+   background-image: url('/assets/lines.svg');
    margin: 0;
 }
 

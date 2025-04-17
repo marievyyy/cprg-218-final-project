@@ -273,6 +273,22 @@ nav.active #weather {
 }
 
 /* FOOTER */
+footer {
+   position: relative;
+}
+
+.footer-overlay {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: calc(100% - 60px);
+   background-image: url('/assets/lines.svg');
+   background-size: contain;
+   pointer-events: none;
+   opacity: 0.8;
+}
+
 footer .container {
    display: flex;
    flex-flow: row wrap;
