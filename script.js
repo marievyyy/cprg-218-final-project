@@ -1,3 +1,5 @@
+const weatherAPI = "e361073631e2c1f68dcc5845794ce885";
+
 bodyContainer =  document.querySelector('body');
 
 // Menu toggle
@@ -14,3 +16,12 @@ toggleNav.addEventListener('click', function () {
       }
    }
 });
+
+// Weather
+fetch(`https://api.openweathermap.org/data/2.5/weather?q=Cancun&appid=e361073631e2c1f68dcc5845794ce885&units=metric`)
+   .then(response => response.json())
+   .then(data => {
+      console.log(data);
+      temp.textContent = `${data.main.temp} \u00B0C`;
+      condition.textContent = `${data.weather[0].description}`;
+   });
