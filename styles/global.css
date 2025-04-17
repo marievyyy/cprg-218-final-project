@@ -277,6 +277,10 @@ nav.active #weather {
    color: var(--font);
 }
 
+.hero-title {
+   overflow: hidden;
+}
+
 /* PAGE BANNER */
 .page-hero-banner {
    position: relative;

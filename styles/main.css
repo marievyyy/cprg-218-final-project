@@ -37,10 +37,6 @@
    text-align: center;
 }
 
-#hero .hero-title {
-   overflow: hidden;
-}
-
 /* ABOUT SECTION */
 #about {
    display: grid;
@@ -65,18 +61,6 @@
    position: relative;
    width: 100%;
    overflow: hidden;
-}
-
-#about .about-image::after,
-.accommodation-boxes .accommodation-box-img::after {
-   position: absolute;
-   content: '';
-   top: 0;
-   left: 0;
-   width: 100%;
-   height: 100%;
-   background-color: var(--light-color);
-   transform-origin: 0% 50%;
 }
 
 #about .about-image-1 {
@@ -121,17 +105,6 @@
    position: relative;
    width: var(--item-width);
    max-width: 350px;
-}
-
-#activities .promo-boxes .promo-box::after {
-   position: absolute;
-   content: '';
-   top: 0;
-   left: 0;
-   width: 100%;
-   height: 100%;
-   background-color: var(--light-tan);
-   transform-origin: 50% 100%;
 }
 
 #activities .promo-box .promo-content {
@@ -400,6 +373,29 @@
 
 /* ANIMATIONS */
 @media (min-width: 1025px) and (prefers-reduced-motion: no-preference) {
+
+   #about .about-image::after,
+   .accommodation-boxes .accommodation-box-img::after {
+      position: absolute;
+      content: '';
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: var(--light-color);
+      transform-origin: 0% 50%;
+   }
+
+   #activities .promo-boxes .promo-box::after {
+      position: absolute;
+      content: '';
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: var(--light-tan);
+      transform-origin: 50% 100%;
+   }
 
    #about .about-image.animated::after,
    .accommodation-box.animated .accommodation-box-img::after {
