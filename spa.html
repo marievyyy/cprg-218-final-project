@@ -9,11 +9,12 @@
    <link rel="icon" href="favicon.png" type="image/x-icon">
    <link rel="stylesheet" href="/styles/global.css">
    <link rel="stylesheet" href="/styles/spa.css">
+   <link rel="stylesheet" href="/styles/animations.css">
 </head>
 
 <body class="page">
    <header>
-      <nav class="navbar" id="mainNav">
+      <nav class="navbar animate" id="mainNav">
          <div class="mobile-menu">
             <button id="toggleNav">
                <span></span>
@@ -21,9 +22,9 @@
                <span></span>
             </button>
          </div>
-
+      
          <ul id="navList">
-            <li><a href="room.html">Room</a></li>
+            <li><a href="room.html">Rooms</a></li>
             <li><a href="activities.html">Activities</a></li>
             <li><a href="dining.html">Dining</a></li>
             <li><a href="spa.html">Spa</a></li>
@@ -38,9 +39,11 @@
          </div>
       </nav>
 
-      <section class="page-hero-banner" id="spa-page">
+      <section class="page-hero-banner animate" id="spa-page">
          <div class="container">
-            <h1>The <span class="font-italic">Serenity</span><br>Sanctuary</h1>
+            <div class="hero-title">
+               <h1>The <span class="font-italic">Serenity</span><br>Sanctuary</h1>
+            </div>
             <p>Spa Services & Price List</p>
          </div>
          <div class="overlay-black"></div>
@@ -48,9 +51,9 @@
    </header>
    <main>
       <section class="container">
-         <h2>Massages</h2>
+         <h2 class="animate">Massages</h2>
          <div class="spa-list-wrapper">
-            <div class="spa-list">
+            <div class="spa-list animate" style="--delay: 0s">
                <div class="spa-list-content">
                   <div class="spa-title">
                      <h3>Shangri La Signature Massage</h3>
@@ -60,7 +63,7 @@
                </div>
                <div class="pricing">$250</div>
             </div>
-            <div class="spa-list">
+            <div class="spa-list animate" style="--delay: 0.2s">
                <div class="spa-list-content">
                   <div class="spa-title">
                      <h3>Deep Tissue Massage</h3>
@@ -70,7 +73,7 @@
                </div>
                <div class="pricing">$180 / $260</div>
             </div>
-            <div class="spa-list">
+            <div class="spa-list animate" style="--delay: 0.3s">
                <div class="spa-list-content">
                   <div class="spa-title">
                      <h3>Hot Stone Massage</h3>
@@ -80,7 +83,7 @@
                </div>
                <div class="pricing">$220</div>
             </div>
-            <div class="spa-list">
+            <div class="spa-list animate" style="--delay: 0.4s">
                <div class="spa-list-content">
                   <div class="spa-title">
                      <h3>Aromatherapy Massage</h3>
@@ -90,7 +93,7 @@
                </div>
                <div class="pricing">$190</div>
             </div>
-            <div class="spa-list">
+            <div class="spa-list animate" style="--delay: 0.5s">
                <div class="spa-list-content">
                   <div class="spa-title">
                      <h3>Swedish Massage</h3>
@@ -100,7 +103,7 @@
                </div>
                <div class="pricing">$170 / $240</div>
             </div>
-            <div class="spa-list">
+            <div class="spa-list animate" style="--delay: 0.5s">
                <div class="spa-list-content">
                   <div class="spa-title">
                      <h3>Couples Massage</h3>
@@ -115,7 +118,7 @@
       <section class="container">
          <h2>Facials</h2>
          <div class="spa-list-wrapper">
-            <div class="spa-list">
+            <div class="spa-list animate" style="--delay: 0s">
                <div class="spa-list-content">
                   <div class="spa-title">
                      <h3>Shangri La Radiance Facial</h3>
@@ -125,7 +128,7 @@
                </div>
                <div class="pricing">$210</div>
             </div>
-            <div class="spa-list">
+            <div class="spa-list animate" style="--delay: 0.2s">
                <div class="spa-list-content">
                   <div class="spa-title">
                      <h3>Hydrating Facial</h3>
@@ -135,7 +138,7 @@
                </div>
                <div class="pricing">$180</div>
             </div>
-            <div class="spa-list">
+            <div class="spa-list animate" style="--delay: 0.3s">
                <div class="spa-list-content">
                   <div class="spa-title">
                      <h3>Anti-Aging Facial</h3>
@@ -145,7 +148,7 @@
                </div>
                <div class="pricing">$270</div>
             </div>
-            <div class="spa-list">
+            <div class="spa-list animate" style="--delay: 0.4s">
                <div class="spa-list-content">
                   <div class="spa-title">
                      <h3>Purifying Facial</h3>
@@ -160,7 +163,7 @@
       <section class="container">
          <h2>Body Treatments</h2>
          <div class="spa-list-wrapper">
-            <div class="spa-list">
+            <div class="spa-list animate" style="--delay: 0s">
                <div class="spa-list-content">
                   <div class="spa-title">
                      <h3>Sea Salt Body Scrub</h3>
@@ -170,7 +173,7 @@
                </div>
                <div class="pricing">$150</div>
             </div>
-            <div class="spa-list">
+            <div class="spa-list animate" style="--delay: 0.2s">
                <div class="spa-list-content">
                   <div class="spa-title">
                      <h3>Tropical Body Wrap</h3>
@@ -180,7 +183,7 @@
                </div>
                <div class="pricing">$200</div>
             </div>
-            <div class="spa-list">
+            <div class="spa-list animate" style="--delay: 0.3s">
                <div class="spa-list-content">
                   <div class="spa-title">
                      <h3>Sun Relief Wrap</h3>
@@ -193,8 +196,8 @@
          </div>
       </section>
       <section class="container">
-         <div class="mini-boxes">
-            <div class="mini-box">
+         <div class="mini-boxes animate">
+            <div class="mini-box" style="--delay: 0s">
                <h3>Manicures &amp; Pedicures</h3>
                <div class="mini-box-content">
                   <p>Shangri La Deluxe Manicure <span>(60 minutes)</span></p>
@@ -213,7 +216,7 @@
                   <p class="pricing">$90</p>
                </div>
             </div>
-            <div class="mini-box">
+            <div class="mini-box" style="--delay: 0.3s">
                <h3>Enhancements (Add-ons)</h3>
                <div class="mini-box-content">
                   <p>Scalp Massage <span>(15 minutes)</span></p>
@@ -228,7 +231,7 @@
                   <p class="pricing">$40</p>
                </div>
             </div>
-            <div class="mini-box">
+            <div class="mini-box" style="--delay: 0.6s">
                <h3>Wellness Programs</h3>
                <div class="mini-box-content row">
                   <p>Yoga Session <br>$50 (Group), $120 (Private) <span>(60 minutes)</span></p>
@@ -241,13 +244,13 @@
       </section>
       <section id="spa-info">
          <div class="container">
-            <h2>Important <span class="font-italic">Notes</span></h2>
-            <ul>
-               <li>Prices are subject to change without notice.</li>
-               <li>Reservations are highly recommended.</li>
-               <li>Please arrive 15 minutes prior to your scheduled appointment.</li>
-               <li>A 24-hour cancellation policy applies.</li>
-               <li>Gratuity not included.</li>
+            <h2 class="animate">Important <span class="font-italic">Notes</span></h2>
+            <ul class="animate">
+               <li style="--delay: 0s">Prices are subject to change without notice.</li>
+               <li  style="--delay: 0.2s">Reservations are highly recommended.</li>
+               <li  style="--delay: 0.3s">Please arrive 15 minutes prior to your scheduled appointment.</li>
+               <li  style="--delay: 0.4s">A 24-hour cancellation policy applies.</li>
+               <li  style="--delay: 0.5s">Gratuity not included.</li>
             </ul>
          </div>
          <div class="overlay"></div>

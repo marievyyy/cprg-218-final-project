@@ -189,3 +189,42 @@ footer {
       color: inherit;
    }
 }
+
+
+/* ANIMATIONS */
+@media (min-width: 1025px) and (prefers-reduced-motion: no-preference) {
+
+   .page-hero-banner.animated .hero-title {
+      animation: 1s cubic-bezier(0.83, 0, 0.17, 1) fade-in-ttb both;
+   }
+
+   .page-hero-banner.animated p {
+      animation: 1s cubic-bezier(0.83, 0, 0.17, 1) fade-in both;
+      animation-delay: 0.3s;
+   }
+
+   .page-hero-banner.animated p {
+      animation: 1s cubic-bezier(0.83, 0, 0.17, 1) fade-in both;
+      animation-delay: 0.3s;
+   }
+
+   h2.animated {
+      animation: 1s cubic-bezier(0.83, 0, 0.17, 1) fade-in both;
+   }
+
+   .spa-list.animated {
+      animation: 0.4s ease-in fade-in-btt var(--delay) both;
+   }
+
+   .mini-boxes.animated .mini-box {
+      animation: 1s cubic-bezier(0.83, 0, 0.17, 1) fade-in-ttb var(--delay) both;
+   }
+
+   h2.animated {
+      animation: 1s cubic-bezier(0.83, 0, 0.17, 1) fade-in both;
+   }
+
+   #spa-info ul.animated li {
+      animation: 0.8s cubic-bezier(0.83, 0, 0.17, 1) fade-in-ltr var(--delay) both;
+   }
+}

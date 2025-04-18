@@ -11,12 +11,36 @@
 @keyframes fade-in-ttb {
    0% {
       opacity: 0;
-      transform: translateY(calc(-1 * 60px));
+      transform: translateY(-60px);
    }
 
    100% {
       opacity: 1;
       transform: translateY(0);
+   }
+}
+
+@keyframes fade-in-btt {
+   0% {
+      opacity: 0;
+      transform: translateY(60px);
+   }
+
+   100% {
+      opacity: 1;
+      transform: translateY(0);
+   }
+}
+
+@keyframes fade-in-ltr {
+   0% {
+      opacity: 0;
+      transform: translateX(-60px);
+   }
+
+   100% {
+      opacity: 1;
+      transform: translateX(0);
    }
 }
 
