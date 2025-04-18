@@ -1,5 +1,5 @@
 #rooms-page {
-   background-image: url('/assets/rooms-hero-banner.jpg');
+   background-image: url('/cprg-218-final-project/assets/rooms-hero-banner.jpg');
 }
 
 /* SIDE BY SIDE PANEL */
@@ -51,23 +51,23 @@
 }
 
 .panel-side.room-1 .panel-img {
-   background-image: url(/assets/room-ocean-view.jpg);
+   background-image: url('/cprg-218-final-project/assets/room-ocean-view.jpg');
 }
 
 .panel-side.room-2 .panel-img {
-   background-image: url(/assets/room-beachfront.jpg);
+   background-image: url('/cprg-218-final-project/assets/room-beachfront.jpg');
 }
 
 .panel-side.room-3 .panel-img {
-   background-image: url(/assets/room-garden.jpg);
+   background-image: url('/cprg-218-final-project/assets/room-garden.jpg');
 }
 
 .panel-side.room-4 .panel-img {
-   background-image: url(/assets/room-ocean-premium.jpg);
+   background-image: url('/cprg-218-final-project/assets/room-ocean-premium.jpg');
 }
 
 .panel-side.room-5 .panel-img {
-   background-image: url(/assets/room-accessible.jpg);
+   background-image: url('/cprg-218-final-project/assets/room-accessible.jpg');
 }
 
 footer {
@@ -121,23 +121,23 @@ footer {
    }
 
    .panel-side.room-1 .panel-img {
-      background-image: url(/assets/room-ocean-view-mobile.jpg);
+      background-image: url('/cprg-218-final-project/assets/room-ocean-view-mobile.jpg');
    }
 
    .panel-side.room-2 .panel-img {
-      background-image: url(/assets/room-beachfront-mobile.jpg);
+      background-image: url('/cprg-218-final-project/assets/room-beachfront-mobile.jpg');
    }
 
    .panel-side.room-3 .panel-img {
-      background-image: url(/assets/room-garden-mobile.jpg);
+      background-image: url('/cprg-218-final-project/assets/room-garden-mobile.jpg');
    }
 
    .panel-side.room-4 .panel-img {
-      background-image: url(/assets/room-ocean-premium-mobile.jpg);
+      background-image: url('/cprg-218-final-project/assets/room-ocean-premium-mobile.jpg');
    }
 
    .panel-side.room-5 .panel-img {
-      background-image: url(/assets/room-accessible-mobile.jpg);
+      background-image: url('/cprg-218-final-project/assets/room-accessible-mobile.jpg');
    }
 
 }

@@ -23,7 +23,7 @@
 #hero {
    height: calc(100vh - 180px);
    background-color: var(--green);
-   background-image: url('/assets/heropage.jpg');
+   background-image: url('/cprg-218-final-project/assets/heropage.jpg');
    background-size: cover;
    background-position: center;
    display: flex;
@@ -80,7 +80,7 @@
 /* ACTIVITIES OR EXPERIENCES */
 #activities {
    background-color: var(--light-tan);
-   background-image: url('/assets/lines.svg');
+   background-image: url('/cprg-218-final-project/assets/lines.svg');
    margin: 0;
 }
 
@@ -176,7 +176,7 @@
 /* REVIEWS */
 #home-reviews {
    position: relative;
-   background-image: url('/assets/heropage.jpg');
+   background-image: url('/cprg-218-final-project/assets/heropage.jpg');
    background-size: cover;
 }
 

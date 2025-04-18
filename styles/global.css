@@ -2,8 +2,8 @@
 
 @font-face {
    font-family: 'PP Editorial Old';
-   src: url('/fonts/PPEditorialOld-UltralightItalic.woff2') format('woff2'),
-      url('/fonts/PPEditorialOld-UltralightItalic.woff') format('woff');
+   src: url('/cprg-218-final-project/fonts/PPEditorialOld-UltralightItalic.woff2') format('woff2'),
+      url('/cprg-218-final-project/fonts/PPEditorialOld-UltralightItalic.woff') format('woff');
    font-weight: 200;
    font-style: italic;
    font-display: swap;
@@ -11,8 +11,8 @@
 
 @font-face {
    font-family: 'PP Editorial Old';
-   src: url('/fonts/PPEditorialOld-Ultralight.woff2') format('woff2'),
-      url('/fonts/PPEditorialOld-Ultralight.woff') format('woff');
+   src: url('/cprg-218-final-project/fonts/PPEditorialOld-Ultralight.woff2') format('woff2'),
+      url('/cprg-218-final-project/fonts/PPEditorialOld-Ultralight.woff') format('woff');
    font-weight: 200;
    font-style: normal;
    font-display: swap;
@@ -330,7 +330,7 @@ footer {
    left: 0;
    width: 100%;
    height: calc(100% - 60px);
-   background-image: url('/assets/lines.svg');
+   background-image: url('/cprg-218-final-project/assets/lines.svg');
    background-size: contain;
    pointer-events: none;
    opacity: 0.8;

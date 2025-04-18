@@ -1,5 +1,5 @@
 #spa-page {
-   background-image: url('/assets/spa-hero-banner.jpg');
+   background-image: url('/cprg-218-final-project/assets/spa-hero-banner.jpg');
 }
 
 h2 {
@@ -95,7 +95,7 @@ h3,
 
 #spa-info {
    position: relative;
-   background-image: url('/assets/heropage.jpg');
+   background-image: url('/cprg-218-final-project/assets/heropage.jpg');
 }
 
 #spa-info .container {

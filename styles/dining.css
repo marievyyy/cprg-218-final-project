@@ -1,5 +1,5 @@
 #dining-page {
-   background-image: url('/assets/dining-hero-banner.jpg');
+   background-image: url('/cprg-218-final-project/assets/dining-hero-banner.jpg');
 }
 
 .dining-intro p {
@@ -54,19 +54,19 @@
 }
 
 .panel-side.dining-1 .panel-img {
-   background-image: url(/assets/dining-beachhouse.jpg);
+   background-image: url('/cprg-218-final-project/assets/dining-beachhouse.jpg');
 }
 
 .panel-side.dining-2 .panel-img {
-   background-image: url(/assets/dining-sandbar.jpg);
+   background-image: url('/cprg-218-final-project/assets/dining-sandbar.jpg');
 }
 
 .panel-side.dining-3 .panel-img {
-   background-image: url(/assets/dining-poolside.jpg);
+   background-image: url('/cprg-218-final-project/assets/dining-poolside.jpg');
 }
 
 .panel-side.dining-4 .panel-img {
-   background-image: url(/assets/dining-lounge.jpg);
+   background-image: url('/cprg-218-final-project/assets/dining-lounge.jpg');
 }
 
 /* mini-box */
@@ -123,19 +123,19 @@ footer {
    }
 
    .panel-side.dining-1 .panel-img {
-      background-image: url(/assets/dining-beachhouse-mobile.jpg);
+      background-image: url('/cprg-218-final-project/assets/dining-beachhouse-mobile.jpg');
    }
 
    .panel-side.dining-2 .panel-img {
-      background-image: url(/assets/dining-sandbar-mobile.jpg);
+      background-image: url('/cprg-218-final-project/assets/dining-sandbar-mobile.jpg');
    }
 
    .panel-side.dining-3 .panel-img {
-      background-image: url(/assets/dining-poolside-mobile.jpg);
+      background-image: url('/cprg-218-final-project/assets/dining-poolside-mobile.jpg');
    }
 
    .panel-side.dining-4 .panel-img {
-      background-image: url(/assets/dining-lounge-mobile.jpg);
+      background-image: url('/cprg-218-final-project/assets/dining-lounge-mobile.jpg');
    }
 
    .mini-boxes {
