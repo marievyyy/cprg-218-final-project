@@ -386,6 +386,10 @@
       transform-origin: 0% 50%;
    }
 
+   .accommodation-boxes .accommodation-box-img::after {
+      transform-origin: right center;
+   }
+
    #activities .promo-boxes .promo-box::after {
       position: absolute;
       content: '';

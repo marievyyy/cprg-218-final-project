@@ -55,12 +55,12 @@
    letter-spacing: 0.09rem;
 }
 
-#testimonials-quote img:first-of-type {
+#testimonials-quote .quote-image:first-of-type {
    max-width: 14rem;
    margin-bottom: auto;
 }
 
-#testimonials-quote img:last-of-type {
+#testimonials-quote .quote-image:last-of-type {
    max-width: 14.125rem;
    margin-top: auto;
 }
@@ -93,3 +93,47 @@ footer {
    }
 }
 
+/* ANIMATIONS */
+@media (min-width: 1025px) and (prefers-reduced-motion: no-preference) {
+
+   .page-hero-banner.animated .hero-title {
+      animation: 1s cubic-bezier(0.83, 0, 0.17, 1) fade-in-ttb both;
+   }
+
+   .page-hero-banner.animated p {
+      animation: 1s cubic-bezier(0.83, 0, 0.17, 1) fade-in both;
+      animation-delay: 0.3s;
+   }
+
+   .mini-boxes.animated .mini-box {
+      animation: 1s cubic-bezier(0.83, 0, 0.17, 1) fade-in-ltr var(--delay) both;
+   }
+
+   #testimonials-quote .quote-image {
+      position: relative;
+      overflow: hidden;
+   }
+
+   #testimonials-quote .quote-image::after {
+      position: absolute;
+      content: '';
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: var(--light-color);
+      transform-origin: 0% 50%;
+   }
+
+   #testimonials-quote.animated .quote-image::after {
+      animation: 1s cubic-bezier(0.83, 0, 0.17, 1) slide-out-x var(--delay) both;
+   }
+
+   #testimonials-quote.animated .quote-image img {
+      animation: 1s cubic-bezier(0.83, 0, 0.17, 1) scale-out var(--delay) both;
+   }
+
+   #testimonials-quote.animated p {
+      animation: 1s cubic-bezier(0.83, 0, 0.17, 1) fade-in var(--delay) both;
+   }
+}
