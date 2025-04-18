@@ -9,11 +9,12 @@
    <link rel="icon" href="favicon.png" type="image/x-icon">
    <link rel="stylesheet" href="/styles/global.css">
    <link rel="stylesheet" href="/styles/activities.css">
+   <link rel="stylesheet" href="/styles/animations.css">
 </head>
 
 <body class="page">
    <header>
-      <nav class="navbar" id="mainNav">
+      <nav class="navbar animate" id="mainNav">
          <div class="mobile-menu">
             <button id="toggleNav">
                <span></span>
@@ -38,9 +39,11 @@
          </div>
       </nav>
 
-      <section class="page-hero-banner" id="activities-page">
+      <section class="page-hero-banner animate" id="activities-page">
          <div class="container">
-            <h1>Activities &amp;<br><span class="font-italic">Excursions</span></h1>
+            <div class="hero-title">
+               <h1>Activities &amp;<br><span class="font-italic">Excursions</span></h1>
+            </div>
             <p>Discover the wonders of our tropical paradise and create unforgettable memories with our curated selection of activities
             and excursions.</p>
          </div>
@@ -48,29 +51,29 @@
       </section>
    </header>
    <main>
-      <section class="container">
+      <section class="container animate">
          <h2 class="center">On Site Activities</h2>
          <p class="subtitle center">Relaxation &amp; Rejuvenation</p>
          <div class="accordion">
-            <details name="accordion-list" open>
+            <details class="animate" name="accordion-list" style="--delay: 0s" open>
                <summary>
                   <h3><span>01</span>Sunrise Yoga on the Beach</h3>
                </summary>
                <p>Start your day with a peaceful yoga session as the sun rises over the ocean. (Daily, complimentary)</p>
             </details>
-            <details name="accordion-list">
+            <details class="animate" name="accordion-list" style="--delay: 0.1s">
                <summary>
                   <h3><span>02</span>Guided Meditation Sessions</h3>
                </summary>
                <p>Find inner peace and tranquillity with our guided meditation sessions in the serene garden. (Daily, complimentary)</p>
             </details>
-            <details name="accordion-list">
+            <details class="animate" name="accordion-list" style="--delay: 0.2s">
                <summary>
                   <h3><span>03</span>Beachside Relaxation</h3>
                </summary>
                <p>Unwind on our pristine private beach with complimentary sun loungers and umbrellas.</p>
             </details>
-            <details name="accordion-list">
+            <details class="animate" name="accordion-list" style="--delay: 0.3s">
                <summary>
                   <h3><span>04</span>Infinity Pool Retreat</h3>
                </summary>
@@ -78,10 +81,10 @@
             </details>
          </div>
       </section>
-      <section class="container">
+      <section class="container animate">
          <p class="subtitle center">Adventure &amp; Recreation</p>
          <div class="accordion">
-            <details name="accordion-list" open>
+            <details class="animate" name="accordion-list" style="--delay: 0s" open>
                <summary>
                   <h3><span>01</span>Water Sports</h3>
                </summary>
@@ -92,19 +95,19 @@
                   <li>Stand-Up Paddleboarding: Enjoy a fun and invigorating workout on the water. (Rentals available)</li>
                </ul>
             </details>
-            <details name="accordion-list">
+            <details class="animate" name="accordion-list" style="--delay: 0.1s">
                <summary>
                   <h3><span>02</span>Beach Volleyball</h3>
                </summary>
                <p>Gather your friends and family for a friendly game of beach volleyball. (Complimentary)</p>
             </details>
-            <details name="accordion-list">
+            <details class="animate" name="accordion-list" style="--delay: 0.2s">
                <summary>
                   <h3><span>03</span>Fitness Center</h3>
                </summary>
                <p>Maintain your fitness routine in our state-of-the-art fitness center. (24/7 access)</p>
             </details>
-            <details name="accordion-list">
+            <details class="animate" name="accordion-list" style="--delay: 0.3s">
                <summary>
                   <h3><span>04</span>Kids&apos; Club Activities</h3>
                </summary>
@@ -112,30 +115,30 @@
             </details>
          </div>
       </section>
-      <section class="container">
+      <section class="container animate">
          <h2 class="center">Local Excursions</h2>
          <p class="subtitle center">Explore the Natural Beauty</p>
          <div class="accordion">
-            <details name="accordion-list" open>
+            <details class="animate" name="accordion-list" style="--delay: 0s" open>
                <summary>
                   <h3><span>01</span>Coral Reef Snorkeling Tour</h3>
                </summary>
                <p>Embark on a guided snorkeling tour to explore the vibrant coral reefs and encounter diverse marine life. (Half-day
                excursion, fees apply)</p>
             </details>
-            <details name="accordion-list">
+            <details class="animate" name="accordion-list" style="--delay: 0.1s">
                <summary>
                   <h3><span>02</span>Island Hopping Adventure</h3>
                </summary>
                <p>Discover the surrounding islands with a scenic boat tour. (Full-day excursion, fees apply)</p>
             </details>
-            <details name="accordion-list">
+            <details class="animate" name="accordion-list" style="--delay: 0.2s">
                <summary>
                   <h3><span>03</span>Rainforest Hike & Waterfall Visit</h3>
                </summary>
                <p>Immerse yourself in the lush rainforest and discover hidden waterfalls. (Half-day or full-day excursion, fees apply)</p>
             </details>
-            <details name="accordion-list">
+            <details class="animate" name="accordion-list" style="--delay: 0.3s">
                <summary>
                   <h3><span>04</span>Sunset Cruise</h3>
                </summary>
@@ -143,22 +146,22 @@
             </details>
          </div>
       </section>
-      <section class="container">
+      <section class="container animate">
          <p class="subtitle center">Cultural Experiences</p>
          <div class="accordion">
-            <details name="accordion-list" open>
+            <details class="animate" name="accordion-list" style="--delay: 0s" open>
                <summary>
                   <h3><span>01</span>Local Village Visit</h3>
                </summary>
                <p>Experience the authentic culture and traditions of the local village. (Half-day excursion, fees apply)</p>
             </details>
-            <details name="accordion-list">
+            <details class="animate" name="accordion-list" style="--delay: 0.1s">
                <summary>
                   <h3><span>02</span>Traditional Cooking Class</h3>
                </summary>
                <p>Learn to prepare local delicacies with a hands-on cooking class. (Half-day excursion, fees apply)</p>
             </details>
-            <details name="accordion-list">
+            <details class="animate" name="accordion-list" style="--delay: 0.2s">
                <summary>
                   <h3><span>03</span>Cultural Performance</h3>
                </summary>
@@ -166,23 +169,23 @@
             </details>
          </div>
       </section>
-      <section class="container">
+      <section class="container animate">
          <p class="subtitle center">Adventure & Wildlife</p>
          <div class="accordion">
-            <details name="accordion-list" open>
+            <details class="animate" name="accordion-list" style="--delay: 0s" open>
                <summary>
                   <h3><span>01</span>Diving Excursions</h3>
                </summary>
                <p>Explore the underwater world with our certified diving instructors. (Various dive sites and packages available, fees
                apply)</p>
             </details>
-            <details name="accordion-list">
+            <details class="animate" name="accordion-list" style="--delay: 0.1s">
                <summary>
                   <h3><span>02</span>Wildlife Sanctuary Visit</h3>
                </summary>
                <p>Encounter exotic wildlife at a nearby sanctuary. (Half-day excursion, fees apply)</p>
             </details>
-            <details name="accordion-list">
+            <details class="animate" name="accordion-list" style="--delay: 0.2s">
                <summary>
                   <h3><span>03</span>Deep-Sea Fishing</h3>
                </summary>
@@ -190,22 +193,22 @@
             </details>
          </div>
       </section>
-      <section id="activities-info">
+      <section id="activities-info" class="animate">
          <div class="container">
             <h2>Booking &amp; <span class="font-italic">Information</span></h2>
             <ul>
-               <li>Our concierge team is available to assist you with booking activities and excursions.</li>
-               <li>Please inquire about availability and pricing for specific activities.</li>
-               <li>Transportation to and from excursion locations can be arranged.</li>
-               <li>Advance bookings are recommended, especially during peak season.</li>
+               <li style="--delay: 0s">Our concierge team is available to assist you with booking activities and excursions.</li>
+               <li style="--delay: 0.1s">Please inquire about availability and pricing for specific activities.</li>
+               <li style="--delay: 0.2s">Transportation to and from excursion locations can be arranged.</li>
+               <li style="--delay: 0.3s">Advance bookings are recommended, especially during peak season.</li>
             </ul>
          </div>
          <div class="overlay"></div>
       </section>
-      <section class="container" id="activities-quote">
-         <img src="/assets/activities-qoute-1.jpg" alt="">
-         <p>Create lasting memories at Shangri La Beach Resort with our diverse range of activities and excursions.</p>
-         <img src="/assets/activities-qoute-2.jpg" alt="">
+      <section class="container animate" id="activities-quote">
+         <img src="/assets/activities-qoute-1.jpg" alt="" style="--delay: 0s">
+         <p style="--delay: 0.6s">Create lasting memories at Shangri La Beach Resort with our diverse range of activities and excursions.</p>
+         <img src="/assets/activities-qoute-2.jpg" alt="" style="--delay: 0.3s">
       </section>
    </main>
    <footer>

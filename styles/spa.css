@@ -203,11 +203,6 @@ footer {
       animation-delay: 0.3s;
    }
 
-   .page-hero-banner.animated p {
-      animation: 1s cubic-bezier(0.83, 0, 0.17, 1) fade-in both;
-      animation-delay: 0.3s;
-   }
-
    h2.animated {
       animation: 1s cubic-bezier(0.83, 0, 0.17, 1) fade-in both;
    }

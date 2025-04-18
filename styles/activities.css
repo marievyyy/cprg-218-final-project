@@ -181,3 +181,40 @@ footer {
       height: auto;
    }
 }
+
+/* ANIMATIONS */
+@media (min-width: 1025px) and (prefers-reduced-motion: no-preference) {
+   .page-hero-banner.animated .hero-title {
+      animation: 1s cubic-bezier(0.83, 0, 0.17, 1) fade-in-ttb both;
+   }
+
+   .page-hero-banner.animated p {
+      animation: 1s cubic-bezier(0.83, 0, 0.17, 1) fade-in both;
+      animation-delay: 0.3s;
+   }
+
+   section.animated h2 {
+      animation: 1s cubic-bezier(0.83, 0, 0.17, 1) fade-in both;
+   }
+
+   section.animated p.subtitle {
+      animation: 1s cubic-bezier(0.83, 0, 0.17, 1) fade-in both;
+      animation-delay: 0.3s;
+   }
+
+   details.animated {
+      animation: 1s cubic-bezier(0.83, 0, 0.17, 1) fade-in-btt var(--delay) both;
+   }
+
+   #activities-info.animated ul li {
+      animation: 0.8s cubic-bezier(0.83, 0, 0.17, 1) fade-in-ltr var(--delay) both;
+   }
+
+   #activities-quote.animated img {
+      animation: 1s cubic-bezier(0.83, 0, 0.17, 1) fade-in-btt var(--delay) both;
+   }
+
+   #activities-quote.animated p {
+      animation: 1s cubic-bezier(0.83, 0, 0.17, 1) fade-in var(--delay) both;
+   }
+}
