@@ -129,6 +129,10 @@ small {
    font-style: italic;
 }
 
+.hidden {
+   display: none;
+}
+
 .section-content-title {
    overflow: hidden;
 }
@@ -405,7 +409,7 @@ footer .footer-secondary {
    nav ul.active {
       opacity: 1;
       transform: scaleY(1);
-      pointer-events: auto;
+      pointer-events: initial;
    }
 
    nav ul li {

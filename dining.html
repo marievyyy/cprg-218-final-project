@@ -9,11 +9,12 @@
    <link rel="icon" href="favicon.png" type="image/x-icon">
    <link rel="stylesheet" href="/styles/global.css">
    <link rel="stylesheet" href="/styles/dining.css">
+   <link rel="stylesheet" href="/styles/animations.css">
 </head>
 
 <body class="page">
    <header>
-      <nav class="navbar" id="mainNav">
+      <nav class="navbar animate" id="mainNav">
          <div class="mobile-menu">
             <button id="toggleNav">
                <span></span>
@@ -38,33 +39,36 @@
          </div>
       </nav>
 
-      <section class="page-hero-banner" id="dining-page">
+      <section class="page-hero-banner animate" id="dining-page">
          <div class="container">
-            <h1>A <span class="font-italic">Culinary</span><br>Journey</h1>
+            <div class="hero-title">
+               <h1>A <span class="font-italic">Culinary</span><br>Journey</h1>
+            </div>
          </div>
          <div class="overlay-black"></div>
       </section>
    </header>
    <main>
       <section class="dining-intro container">
-         <p>Indulge in a diverse range of dining experiences at Shangri La Beach Resort. From elegant fine dining to casual
+         <h2 class="hidden">A Culinary Journey</h2>
+         <p class="animate">Indulge in a diverse range of dining experiences at Shangri La Beach Resort. From elegant fine dining to casual
             beachfront bites, our restaurants and bars offer something to tantalize every taste bud and create unforgettable
             culinary moments.</p>
       </section>
-      <section class="container panel panel-dining">
-         <p class="subtitle">Fine Dining with Ocean Views</p>
-         <h2>The Beach House</h2>
+      <section class="container panel panel-dining animate">
+         <p class="subtitle" style="--delay: 0.4s">Fine Dining with Ocean Views</p>
+         <h2 style="--delay: 0s">The Beach House</h2>
          <div class="panel-side dining-1">
-            <div class="panel-img"></div>
+            <div class="panel-img" style="--delay: 0s"></div>
             <div class="panel-content">
-               <p>
+               <p style="--delay: 0.5s">
                   Experience the epitome of culinary excellence at The Beach House. Our signature restaurant offers breathtaking panoramic
                   ocean views, creating a romantic and sophisticated ambiance. Our talented chefs craft exquisite dishes using the
                   freshest locally-sourced seafood and premium international ingredients. Indulge in innovative flavor combinations and
                   impeccable service for a truly memorable fine dining experience. The Beach House is perfect for special occasions or a
                   luxurious evening out.
                </p>
-               <ul>
+               <ul style="--delay: 0.8s">
                   <li>Cuisine: Fine Dining, Seafood, International</li>
                   <li>Ambiance: Elegant, Romantic, Oceanfront</li>
                   <li>Dress Code: Smart Casual</li>
@@ -73,19 +77,19 @@
             </div>
          </div>
       </section>
-      <section class="container panel panel-dining">
-         <p class="subtitle">Relaxed Beachfront Grill</p>
-         <h2>The Sand Bar</h2>
+      <section class="container panel panel-dining animate">
+         <p class="subtitle" style="--delay: 0.4s">Relaxed Beachfront Grill</p>
+         <h2 style="--delay: 0s">The Sand Bar</h2>
          <div class="panel-side dining-2">
-            <div class="panel-img"></div>
+            <div class="panel-img" style="--delay: 0.8s"></div>
             <div class="panel-content">
-               <p>
+               <p style="--delay: 0s">
                   For a more casual and laid-back dining experience, head to The Sand Bar. Situated right on the beach, this vibrant grill
                   offers a relaxed atmosphere where you can enjoy delicious food with your toes in the sand. Savor grilled specialties,
                   fresh salads, and satisfying sandwiches, all while soaking in the sun and enjoying the ocean breeze. The Sand Bar is the
                   perfect spot for a casual lunch, a refreshing afternoon snack, or a relaxed dinner under the stars.
                </p>
-               <ul>
+               <ul style="--delay: 0.3s">
                   <li>Cuisine: Casual, Grill, Seafood, American</li>
                   <li>Ambiance: Relaxed, Beachfront, Informal</li>
                   <li>Dress Code: Casual</li>
@@ -94,19 +98,19 @@
             </div>
          </div>
       </section>
-      <section class="container panel panel-dining">
-         <p class="subtitle">Refreshments and Light Bites</p>
-         <h2>The Poolside Cafe</h2>
+      <section class="container panel panel-dining animate">
+         <p class="subtitle" style="--delay: 0.4s">Refreshments and Light Bites</p>
+         <h2 style="--delay: 0s">The Poolside Cafe</h2>
          <div class="panel-side dining-3">
-            <div class="panel-img"></div>
+            <div class="panel-img" style="--delay: 0s"></div>
             <div class="panel-content">
-               <p>
+               <p style="--delay: 0.5s">
                   Stay refreshed and energized without leaving the poolside at The Poolside Cafe. This convenient and casual spot offers a
                   variety of light bites, including salads, wraps, and snacks, as well as a wide selection of refreshing beverages, from
                   tropical cocktails to chilled juices. It's the perfect place to grab a quick and tasty meal or a cool drink while
                   enjoying the sun and the pool.
                </p>
-               <ul>
+               <ul style="--delay: 0.8s">
                   <li>Cuisine: Casual, Light Bites, Snacks, Beverages</li>
                   <li>Ambiance: Relaxed, Poolside, Informal</li>
                   <li>Dress Code: Casual</li>
@@ -115,19 +119,19 @@
             </div>
          </div>
       </section>
-      <section class="container panel panel-dining">
-         <p class="subtitle">Sophisticated Cocktails and Ambiance</p>
-         <h2>The Lobby Lounge</h2>
+      <section class="container panel panel-dining animate">
+         <p class="subtitle" style="--delay: 0.4s">Sophisticated Cocktails and Ambiance</p>
+         <h2 style="--delay: 0s">The Lobby Lounge</h2>
          <div class="panel-side dining-4">
-            <div class="panel-img"></div>
+            <div class="panel-img" style="--delay: 0.8s"></div>
             <div class="panel-content">
-               <p>
+               <p style="--delay: 0s">
                   Unwind and socialize in the elegant setting of The Lobby Lounge. This sophisticated lounge offers a curated selection of
                   handcrafted cocktails, fine wines, and premium spirits. Enjoy light appetizers and small plates in a stylish atmosphere,
                   often accompanied by live music in the evenings. The Lobby Lounge is the perfect place to start your evening, enjoy a
                   nightcap, or simply relax and soak in the refined ambiance.
                </p>
-               <ul>
+               <ul style="--delay: 0.3s">
                   <li>Cuisine: Beverages, Light Appetizers</li>
                   <li>Ambiance: Sophisticated, Relaxed, Live Music (select evenings)</li>
                   <li>Dress Code: Smart Casual</li>
@@ -136,20 +140,20 @@
             </div>
          </div>
       </section>
-      <section class="container">
+      <section class="container panel-dining animate">
          <h2>Other <span class="font-italic">Dining</span> Options</h2>
          <div class="mini-boxes">
-            <div class="mini-box"> 
+            <div class="mini-box" style="--delay: 0s"> 
                <h3>Room Service</h3>
                <p>Enjoy the convenience of dining in the comfort and privacy of your own room with our extensive room service menu,
                available 24 hours a day.</p>
             </div>
-            <div class="mini-box">
+            <div class="mini-box" style="--delay: 0.3s">
                <h3>Buffet Breakfast</h3>
                <p>Start your day with a sumptuous buffet breakfast featuring a wide array of hot and cold dishes, fresh fruits, pastries,
                and more.</p>
             </div>
-            <div class="mini-box">
+            <div class="mini-box" style="--delay: 0.6s">
                <h3>Special Dietary Options</h3>
                <p>We are committed to accommodating your dietary needs. Please inform us of any allergies or dietary restrictions, and our
                chefs will be happy to prepare customized meals for you.</p>
