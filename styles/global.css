@@ -289,6 +289,7 @@ nav.active #weather {
 .page-hero-banner {
    position: relative;
    height: 70vh;
+   max-height: 700px;
    background-size: cover;
    background-position: center;
    padding-top: calc(140px + 2rem);
